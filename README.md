@@ -1,4 +1,5 @@
-# python notes
+# Python Notes
+A guide to understanding, reviewing, and learning Python.
 
 1. [Intro to Comps & Python](https://github.com/ShamitaGoyal/notes-python/blob/main/Intro_to_comps.ipynb)
 
