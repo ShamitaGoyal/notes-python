@@ -1,0 +1,142 @@
+
+The following is a review and reminder of good practices
+for efficient Python code.
+
+==============================================================
+1. What can be improved with this code?
+
+scoresList = []
+scoresList = readData()  # readData() returns a list of numbers
+total = 0
+for i in range(4) :
+    total += scoresList[i]
+
+
+==============================================================
+2. Given that the main function has 2 variables: 
+          var1 = 1
+          var2 = [2,3,4]
+
+With the function call to a function named fA:  fA(var1)
+If fA has the line of code:  var1 = 0
+Will var1 in main be changed? Why or why not?
+
+def main():
+    var1 = 1
+    var2 = [2,3,4]
+
+def fA():
+    var1 = 0
+
+fA(var1)
+
+With the function call to a function named fB:  fB(var2)
+if fB has the line of code:  var2[0] = 0
+Will var2 in main be changed? Why or why not?
+
+
+
+
+==============================================================
+3. If the code runs without error, what must be the field separator 
+   in the input file? 
+   What can be improved with this code?
+
+list = []
+d = dict()
+with open(filename) as infile:
+   aline = infile.readline()
+   while aline != "":  
+      aLine = aLine.rstrip().split()    
+      list.append(aLine)
+      aline = infile.readline()
+    
+for i in range(len(list)):
+   d[lines[i][0]] = lines[i][2]
+
+
+==============================================================
+4. What's good about defining this global constant
+     DEFAULT_FILE = "input.txt"
+for a program that has a default input file?
+
+If you're writing a class definition, what's the difference 
+between making DEFAULT_FILE a global constant vs a class attribute, 
+vs. an instance attribute, vs. a local constant?
+
+
+===============================================================
+5. If the input file can be opened successfully, th code below 
+reads lines from the file into a list to be processed later.
+If the file can't be opened, the code prints an error message.
+
+Is there any error with the way the exception is handled?
+
+dataList = []
+try:
+   with open(filename)as infile :
+      for line in infile:
+         dataList.append(line.rstrip())       
+except IOError:
+   print("Error opening " + filename)
+
+# code to process data in the list starts here
+print(len(dataList))
+
+
+===============================================================
+6. Given that an input file contains multiple lines, each line 
+has one floating point number. Given also that the file can be 
+opened successfully so no need to test for file open success.
+ 
+a. Write the most efficient code to create a list of numbers 
+from the input file. You can assume that every line contains a
+number.
+
+
+b. Write the most efficient code to create a list of numbers
+from the input file, if you don't know that there's a number 
+on each line. If a line doesn't contain a number, ignore it.
+
+
+===============================================================
+7. Given a list L that contains many numbers.
+Write code to remove any duplicate numbers and any 0's from L,
+and sort L from lowest to highest
+Example: if L is [1,-2,4,0,-2,3,3,5,-1,5]
+Then after the code runs, L is [-1,1,4]
+
+
+===============================================================
+8. Given L = ["CIS 41A", "CIS 28", "EWRT 10", "PE 10"]
+
+a. Write the most efficient code to print one line of output, as
+a comma separated sequence of elements of L:
+        CIS 41A, CIS 28, EWRT 1, PE 10
+
+
+b. Write the most efficient code to print 4 lines of output
+in a 2-column format:
+CIS  41A
+CIS   28
+EWRT   1
+PE    10
+
+
+===============================================================
+9. Given that a De Anza student has entered their student ID
+(an 8-digit number) at a prompt for student ID, and the inpput
+is stored in the string variable named 'id'.
+
+a. With the 'id' string, write code to remove any leading and 
+trailing spaces, and check that the id is an 8-digit number. 
+Print the resulting 8-digit number or print "not valid".
+Your code should not need to use regular expression.
+
+b. With the 'id' string, write code to extract the 8-digit number
+from the string, assuming that there can be other words and
+punctuation in the string.
+Print the resulting 8-digit number or print "not valid". 
+
+
+
