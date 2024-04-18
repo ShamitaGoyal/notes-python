@@ -5,6 +5,7 @@ A guide to understanding, reviewing, and learning Python.
 
 2. [Functions](https://github.com/ShamitaGoyal/notes-python/blob/main/Functions.ipynb)
    - [Functions: A Review](https://github.com/ShamitaGoyal/notes-python/blob/main/Functions-review.ipynb)
+   - [Review Python Code: Exercises](https://github.com/ShamitaGoyal/notes-python/blob/main/Review_Python_coding_practice.txt)
 
 3. OOP — Objected Oreinted Programming
    - [Intro to OOP — What is a class? What makes up a class?](https://github.com/ShamitaGoyal/notes-python/blob/main/1_OOP.ipynb)
