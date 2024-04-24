@@ -1,5 +1,5 @@
 # Python Notes
-A guide to understanding, reviewing, and learning Python.
+A guide to understanding, reviewing, and learning `Python`.
 
 1. [Intro to Comps & Python](https://github.com/ShamitaGoyal/notes-python/blob/main/Intro_to_comps.ipynb)
 
@@ -12,3 +12,8 @@ A guide to understanding, reviewing, and learning Python.
    - [Creating Data Types Using OOP + Encapsulation + Pass by Reference](https://github.com/ShamitaGoyal/notes-python/blob/main/2_OOP.ipynb)
    - [Static, Instance, & Class Methods + Variables, Aggregation, & Inheritance](https://github.com/ShamitaGoyal/notes-python/blob/main/3_OOP.ipynb)
    - [Super(), Types Of Inheritance, MRO, & Polymorphism](https://github.com/ShamitaGoyal/notes-python/blob/main/4_OOP.ipynb)
+
+4. [Iterables, Iterators, Generators](https://github.com/ShamitaGoyal/notes-python/blob/main/IterablesNotes.ipynb)
+5. Callables
+   - [lambda, map, reduce, filter, & sorted pt.1](https://github.com/ShamitaGoyal/notes-python/blob/main/CallablesNotes1.ipynb)
+   
